@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+body {
+  background-color: black;
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px; color: white">
+
+  <div class="w3-panel">
+    <h1><b>transience</b></h1>
+    <h3><p>by Shona kelly</p></h3>
+  </div>
+
+
+
+<p>there’s a piano on my roof
+<p>a chime and composition with every drop
+<p>that falls fast
+<p>falls slow
+<p>i try to etch the notes on paper
+<p>on the lines, between
+<p>but the sound is stagnant by my hand
+<p>i don’t think the notes belong to me, my keys
+<p>i won’t ask why so i just listen
+<p>yearn
+<p>for the piano on my roof
+<br>
+<br>
+<p>the notes slide down my window
+<p>bounce on the ground
+<p>seep through the cracks on my roof
+<p>to the floor 
+<br>
+<br>
+<p>i touch the pools
+<p>try to feel the notes
+<p>the timbre the stave
+<p>but the composition is gone
+<p>only a sound when falling
+<p>hitting a surface above
+<p>beyond 
+<br>
+<br>
+<p>soundless, when whole
+<br>
+<p>i hear the notes lighten to piano from forte
+<p>tempo pared to pause
+<p>then stop
+<br>
+<p>i swish my fingers over the surface
+<p>ripples of sound no more
+<br>
+<br>
+<p>and I yearn 
+<br>
+<p>there are days of silence that stretch to weeks
+<p>more
+<p>and i wonder about the piano on my roof
+<p>if I should find it 
+<p>play it 
+<p>make the transience of its notes myself
+<br>
+<br>
+<p>then that thought is gone 
+<p>when I hear the swell of music once more 
+<p>a prelude of petrichor 
+<p>a taste that catches in the back of my throat
+<br>
+<br>
+<p>maybe I should sing
+<br>
+<br>
+<p>because there’s a piano on my roof
+<p>and I’m in love with the one who plays
+<br>
+<br>
+<br>
+
+
+</p>
+<style>
+a:link, a:visited {
+  background-color:    #6e4ea5   ;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: grey;
+}
+</style> 
+<a href="https://gloswriters.org.uk/competition/" title="Writing Competition Winners"> Gloucestershire Writer's Network Competition Winners 2024</a>
+
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
