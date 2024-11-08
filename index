@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+body {
+  background-color: black;
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px; color: white">
+
+  <div class="w3-panel">
+    <h1><b>SHONA KELLY</b></h1>
+    <h2><p>WRITING EXAMPLES</p></h2>
+    <p>Examples range between 1k-2k words.</p>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+      <img src="https://b.l3n.co/i/tzpPfH.jpg" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+ 
+      </div>
+
+
+
+<dl>
+<h3><dt> INTERACTIVE FICTION</dt></h3>
+<dd> -an excerpt from STARRING ROLE, a longer adult interactive dating sim, that also includes art.</dd>
+<dd> -a complete short fan interactive novel based around meeting the character Prince Orpheus from BG3.</dd>
+</dl>
+
+<dl>
+<h3><dt> PROSE</dt></h3>
+<dd> -an excerpt from my novel 'Völuspá', a near future post-apocapytic alternate universe set around Norse mythology. </dd>
+<dd> -a short story retelling of a moment from one of my DnD campaigns.</dd>
+</dl>
+
+
+<dl>
+<h3><dt> POETRY</dt></h3>
+<dd> -a free verse poem that was placed highly commended in Gloucestershire Writer's Network WRiting Competition 2024. </dd>
+</dl>
+
+  
+
+
+
+   <div class="w3-xlarge w3-section w3-center">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
